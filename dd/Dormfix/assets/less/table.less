@@ -1,0 +1,34 @@
+.table {
+    margin-bottom: 0px !important;
+    & th {
+    	.noborder();
+            font-weight: 600;
+            font-variant: caption;
+            font-size: 14px;
+            color: white;
+    }
+    & td {
+        .noborder();
+        max-width: 15rem;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        font-size: 14px;
+        font-weight: 500;
+    }
+	&-status tbody>tr{
+    	cursor: pointer;
+    	&:hover {
+    		opacity: 0.8;
+    	}
+	}
+	&-hover tbody>tr {
+		&>td {
+    		text-overflow: ellipsis;
+    		max-width: 30rem;
+    		overflow: hidden;
+		}
+	}
+    &-responsive {
+        border: none;
+    }
+}

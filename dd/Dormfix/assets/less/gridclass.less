@@ -1,0 +1,31 @@
+@gridtag:{
+	pd:padding;
+	mg:margin;
+};
+@gridclass:{
+	0:0px;
+	1:1rem;
+	2:2rem;
+	3:3rem;
+}
+each(@gridtag,.(@v,@k,@i){
+	each(@gridclass,{
+		.@{k}-@{key}{
+			@{v}: @value;
+		}
+		.@{k}-t-@{key} {
+	    	@{v}-top: @value;
+		}
+		.@{k}-b-@{key} {
+	    	@{v}-bottom: @value;
+		}
+		.@{k}-v-@{key} {
+	    	@{v}-top: @value;
+	    	@{v}-bottom: @value;
+		}
+		.@{k}-h-@{key} {
+	    	@{v}-left: @value;
+	    	@{v}-right: @value;
+		}
+	});
+});

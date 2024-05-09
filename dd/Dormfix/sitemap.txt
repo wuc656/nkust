@@ -1,0 +1,3 @@
+http://studorm.kuas.edu.tw/dormfix/index.php/request_list/1
+http://studorm.kuas.edu.tw/dormfix/index.php/request
+http://studorm.kuas.edu.tw/dormfix/index.php/manage
